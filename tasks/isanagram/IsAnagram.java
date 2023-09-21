@@ -7,8 +7,8 @@ public class IsAnagram {
         if (s.length() != t.length()) {
             return false;
         }
-        char[] sChars = s.toCharArray();
-        char[] tChars = t.toCharArray();
+        byte[] sChars = s.getBytes();
+        byte[] tChars = t.getBytes();
         Arrays.sort(sChars);
         Arrays.sort(tChars);
         return Arrays.equals(sChars, tChars);
