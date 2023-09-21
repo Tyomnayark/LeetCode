@@ -3,11 +3,12 @@
 *.tmp
 *.git
 /temp/
-
+/out/
 # Игнорировать файлы настроек IDE
 .idea/
 .vscode/
-/out
+.out/
+*.iml
 
 # Игнорировать файлы конфигурации проекта
 config.properties
