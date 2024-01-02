@@ -13,7 +13,6 @@ class Solutionkt {
                 nums[k++] = nums[i]
             }
         }
-
         return k
     }
 }
