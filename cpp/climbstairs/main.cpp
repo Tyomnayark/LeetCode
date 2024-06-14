@@ -15,4 +15,5 @@ int climbStairs(int n) {
 
 int main() {
     std::cout << climbStairs(5) << std::endl;
+    return 0; 
 }
