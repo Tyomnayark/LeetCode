@@ -1,18 +1,22 @@
-
-struct TreeNode {
-      int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode() : val(0), left(nullptr), right(nullptr) {}
-      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
-  
-int maxDepth(TreeNode* root) {
-    if (root == nullptr){
-        return 0;
+{
+  "waitTimeDuration": 5.0,
+  "skipButtonTime": 3.0,
+  "videos": [
+    {
+      "comment": "тестовое видео для QA с флагом пропуска",
+      "videoName": "big_buck_bunny",
+      "skipFlag": 1
+    },
+	{
+      "comment": "тестовое видео для QA без флага пропуска",
+      "videoName": "maxwell",
+      "skipFlag": 0
+    },
+	{
+      "comment": "тестовое видео для QA без флага пропуска",
+      "videoName": "polish_cow",
+      "skipFlag": 1б
+      
     }
-    int leftDepth = maxDepth(root->left);
-    int rightDepth = maxDepth(root->right);
-    return ((leftDepth > rightDepth) ? leftDepth : rightDepth) + 1;
+  ]
 }
