@@ -1,15 +1,29 @@
-# Игнорировать временные файлы и директории
+# Temporary files
 *.log
 *.tmp
-*.git
 /temp/
 /out/
-# Игнорировать файлы настроек IDE
+
+# Compiled / binary files
+*.class
+*.jar
+*.exe
+*.bin
+*.lock
+
+# Build output
+bin/
+build/
+.gradle/
+
+# IDE settings
 .idea/
 .vscode/
 .out/
 *.iml
+.project
+.settings/
 
-# Игнорировать файлы конфигурации проекта
+# Project config
 config.properties
 
